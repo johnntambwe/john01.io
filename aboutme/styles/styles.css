@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+}
+
+nav{
+    background-color: steelblue;
+    padding: 10px;
+}
+
+a{
+    color: white;
+    margin: 40px;
+}
+
+img{
+    width: 650px;
+    border: 4px solid steelblue;
+}
+
+p{
+    padding: 10px;
+}
+
+footer{
+    background-color: steelblue;
+    color: white;
+}
+
+h1{
+    color:#123;
+    background-color: lightgray;
+    border: 2px groove rgb(2,2,0.2,0.2);
+    border-radius: 15px;
+    transition: 1s;
+
+}
+
+h1:hover{
+    color: gray;
+    letter-spacing: 2px;
+    background-color: lightblue;
+    border-radius: 2px;
+    transform: rotateX('angle');
+}
