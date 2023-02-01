@@ -1,9 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sofia&family=Yeseva+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  Sofia , sans-serif ;
+    font-size: 22px;
+    background-color: #2596be;
+}
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
 }
 
 nav a {
+    padding: 35px;
     text-align: center;
     color: white ;
     text-decoration: none;
@@ -11,6 +22,10 @@ nav a {
 
 #heros-msg h1, #hero-msg h4 {
     text-align: center;
+}
+
+#logo_link{
+    padding-top: 5px;
 }
 
 .button-box{
@@ -25,12 +40,14 @@ main section{
     height:725px;
 }
 
-body{
-    background-color: #2596be;
-}
 
 header{
     background-color: #9ca4e0;
+}
+
+.icon{
+    padding-top: 10px;
+    width: 80px;
 }
 
 nav a:hover{
@@ -39,9 +56,14 @@ nav a:hover{
 }   
 
 .book , .join{
+
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 18px;
     background-color: #cbe5d3;
     color: #2596be;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
@@ -54,12 +76,30 @@ nav a:hover{
 }
 
 .msg{
+    padding: 35px;
+    line-height: 1.5em;
     background-color:#9ca4e0 ;
 }
 
+.msg h2{
+    font-family:  'Great Vibes', sans-serif ;
+}
+
+.msg p{
+    padding-bottom: 15px;
+    font-size: .8em;
+}
+
 footer{
+    margin-top: 200px;
+    padding: 25px 50px;
     background-color: #cbe5d3;
     
+}
+
+footer .social img{
+
+    padding-top: 15px;
 }
 
 footer a{
@@ -71,17 +111,23 @@ footer a:hover{
     color: rgb(15, 197, 31);
 }
 .home-title{
+    margin-top: 10px;
+    font-size: 2em;
+    font-family:  'Yeseva one', sans-serif ;
     color: white;
 }
+
+h2{
+    
+    margin: 0;
+}
+
 h4{
+    
     color: grey;
 }
 
 .logo {
-    width: 80px;
-}
-
-.icon{
     width: 80px;
 }
 
@@ -97,3 +143,17 @@ footer p a:hover{
     text-decoration: underline;
 }
 
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img{
+    border: 10px solid #747474;
+}
+main section img{
+    box-sizing: border-box;
+}
+
+.mountains{
+    margin: 100px 0;
+}
