@@ -26,9 +26,10 @@ nav a {
     
 }
 
-#hero{
+#hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
    
 }
 
@@ -250,7 +251,7 @@ main section img{
         padding: 15px;
     }
     #hero {
-        margin-top: 100px;
+        margin-top: 0;
     }
     #hero-msg {
         margin-top: 0;
