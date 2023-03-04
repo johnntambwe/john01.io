@@ -135,8 +135,8 @@ nav a:hover{
 }
 
 footer{
-    margin-top: 200px;
-    padding: 25px 50px;
+    /* margin-top: 200px;
+    padding: 25px 50px; */
     background-color: #cbe5d3;
     display: flex;
     justify-content: space-around;
@@ -238,6 +238,47 @@ main section img{
     grid-row: 2/3;
 }
 
+.block1_img1 {
+    
+    width: 25%;
+    height: 55vh;
+    margin-left: 50px;
+    float: right;
+    border: 5px rgb(0, 255, 30) double;
+    box-shadow: 5px 3px 5px white;
+    
+}
+
+.block2_img2 {
+    padding: 10px;
+    width: 30%;
+    height: 45vh;
+    margin-left: 50px;
+    float: right;
+    border: 5px rgb(116, 208, 234) groove;
+    
+}
+
+.block3_img3  {
+    padding: 5px;
+    width: 40%;
+    height:50vh;
+    margin-left: 50px;
+    float: right;
+    border: 3px #2596be solid;
+    border-radius: 30px;
+    
+}
+
+.block3_img3:hover{
+    border-bottom: 3px rgb(0, 208, 255) groove;
+}
+
+.main_page2 {
+    
+    margin: 30px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
@@ -279,4 +320,5 @@ main section img{
         margin-top: 25px;
     }
    
+    
 }
