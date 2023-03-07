@@ -10,7 +10,7 @@ Fonts are separated by a | */
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: Satisfy, Parisienne;
+  --heading-font:"Times New Roman",Satisfy, Parisienne;
   --paragraph-font: "Dancing Script", "sans serif";
 
   /* these colors below should be chosen from among your palette colors above */
