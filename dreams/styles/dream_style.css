@@ -6,7 +6,7 @@ body{
     overflow: auto;
     display: grid;
     grid-template: 10% 8% auto 10% / 1fr 1fr 1fr 1fr;
-    /* gap: 5px; */
+    gap: 5px;
 
 }
 
@@ -95,7 +95,7 @@ nav a:hover, .footlinks a:hover, .text a:hover {
 /* main and all six blocks of images */
 
 main{
-
+    padding-top: 70px;
     background-color: #123;
     color: #ffff;
     grid-row: 3/4;
@@ -213,6 +213,91 @@ footer{
 
 .social img:hover{
     transform: scale(1.5);
+}
+
+/* media query to make the webpage responsive on small divices */
+
+@media screen and (max-width: 3416px)  {
+
+    body{
+        display: block;    
+    }
+
+    header{
+        width: 1fr;
+        height: 10%;
+    }
+
+    .logo{
+        margin: 25px;
+        width: 25%;
+        border: 3px black solid;
+        border-radius: 300px;
+    }
+    
+    nav{
+       
+        display: block;
+        text-align: start;   
+    }
+
+    nav a{
+       
+        padding: 30px;
+    }
+
+    .hero_baner{
+        width: 1fr;
+        height: 10%;
+    }
+    
+    .hero_baner img{
+       height: 25vh;
+       transform: none;
+    }
+    
+    main{
+        width: auto;
+        height: auto;
+    }
+    
+    .contenair{
+        margin: 50px;
+        display: block;
+    }
+
+    .contenair img:hover{
+
+        transform: scale(0.9);
+    }
+    
+
+    footer{
+       
+        width: 100%;
+        height: 10%;
+        display: block;
+    }
+
+    .footlinks{
+        width: 60%;
+    }
+
+    .social, .text{
+        margin: 80px;
+    }
+
+    .social a {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .social img{
+        margin: 0 auto;
+        width: 2.2em;
+    }
+       
+
 }
 
 /* The End. */
