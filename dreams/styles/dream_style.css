@@ -220,6 +220,7 @@ footer{
 @media screen and (max-width: 3416px)  {
 
     body{
+        font-size: 2.5em;
         margin: 0;
         padding: 0;
         display: block;    
