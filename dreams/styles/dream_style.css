@@ -291,7 +291,7 @@ footer{
     }
 
     .social, .text{
-        /*margin: 80px;*/
+        margin: 80px;
     }
 
     .social a {
@@ -301,7 +301,7 @@ footer{
 
     .social img{
         margin: 0 auto;
-        width: 2.2em;
+        width: 1.2em;
     }
        
 
