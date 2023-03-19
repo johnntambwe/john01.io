@@ -175,6 +175,7 @@ main{
 /* Footer - social media links and icons - copyright text */
 
 footer{
+    Height: 25vh;
     background-color: #123;
     font-family: Parisienne,satisfy, serif;
     font-size: 1.2em;
