@@ -9,7 +9,7 @@ body{
    
     overflow: auto;
     display: grid;
-    grid-template: 10% 8% auto 15% / 1fr 1fr 1fr 1fr;
+    grid-template: 10% 8% auto 10% / 1fr 1fr 1fr 1fr;
     gap: 5px;
 
 }
@@ -224,7 +224,7 @@ footer{
 @media screen and (max-width: 3416px)  {
 
     body{
-        font-size: 3em;
+        font-size: 1em;
         margin: 0;
         padding: 0;
         display: block;    
