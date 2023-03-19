@@ -207,6 +207,7 @@ footer{
 }
 
 .social a{
+    color: white;
     margin: 25px;
     width: 25%;
 }
@@ -249,7 +250,7 @@ footer{
     }
 
     nav a{
-       
+        color: white;
         padding: 30px;
     }
 
@@ -283,6 +284,7 @@ footer{
        
         width: 100%;
         height: auto;
+        grid-rows: 4 / -1;
         display: block;
     }
 
@@ -295,6 +297,7 @@ footer{
     }
 
     .social a {
+        color: white;
         display: inline-block;
         margin: 0 auto;
     }
