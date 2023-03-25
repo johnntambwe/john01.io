@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Parisienne&family=Satisfy&display=swap');
+
+body{
+    margin: 50px;
+    padding: 0px;
+}
+
+.contenair1{
+   
+    font-size: 3em;
+    display: grid;
+    grid-template: 10% 8% auto 8% / 1fr 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+/* Header  -  navigation bar  - links and logo */
+
+header{
+    font-family: satisfy, serif;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    background-color: #123;
+    grid-column: 1 / -1;
+    
+}
+
+.logo{
+    margin-left: 100px;
+    width: 30%;
+    border: 3px black solid;
+    border-radius: 200px;
+    
+}
+
+nav{
+   
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+   
+}
+
+nav a, .footlinks a, .text a, .social a{
+    color:  whitesmoke;
+    text-decoration: none;
+    transition: 1s;
+}
+
+nav a:hover, .footlinks a:hover, .text a:hover {
+
+    letter-spacing: 5px;
+    color: #48cae4;
+}
+
+/* .hero_baner and hero message */
+
+.hero_baner{
+    margin-left: 80px;
+    margin-right: 80px;
+    grid-row: 2/3;
+    grid-column: 1 /5;
+    z-index: 1;
+    display: flex;
+}
+
+.hero_baner img{
+    width: 100%;
+    height: 7em; 
+    z-index: 0;
+   transform: skewx(-10deg);
+   flex-direction: column;
+   
+}
+
+.hero_baner h1{
+    font-size: 2em;
+    font-family: Parisienne, serif;
+    text-align: center;
+    color: rgb(17, 62, 199);
+}
+
+/* main and all six blocks of images */
+
+main{
+    padding-top: 70px;
+    background-color: #123;
+    color: #ffff;
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    
+}
+
+.contenair2_p{
+    font-size: 1.3em;
+    font-family: Parisienne;
+    text-align: center;
+}
+
+.contenair2{
+    margin: 80px;
+    display: grid;
+    gap: 20px;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: 
+        "m s l"
+        "n p k"
+    ;
+    justify-content: center;
+   
+}
+
+.contenair2 h2{
+    font-size: 2em;
+    font-style: italic;
+    color: #48cae4;
+    font-family: "Times New Roman", "Dancing Script", serif;
+}
+
+.contenair2 p{
+    padding: 50px;
+    line-height: 1.5em;
+    text-align: start;
+    font-size: 1.2em;
+    font-family: "Dancing Script", serif;
+}
+
+.contenair2 img{
+    width: 85%;
+    border-radius: 50px;
+}
+
+.contenair2 img:hover{
+    width: 85%;
+    border-radius: 50px;
+    box-shadow: 5px 2px 3px 5px blue;
+    
+}
+
+.block1{
+    grid-area: m;
+}
+.contenair2 img:hover{
+
+    transform: scale(1.5);
+}
+
+.block2{
+    grid-area: s;
+}
+
+
+.block3{
+    grid-area: l;
+}
+
+.block4{
+    grid-area: n;
+}
+
+.block5{
+    grid-area: p;
+}
+
+.block6{
+    grid-area: k;
+}
+
+/* Footer - social media links and icons - copyright text */
+
+footer{
+    background-color: #123;
+    font-family: Parisienne,satisfy, serif;
+    font-size: 1.2em;
+    /* margin-top: 6px; */
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text{
+    color: #48cae4;
+    margin-left: 50px;
+    width: 25%;
+    
+}
+
+.footlinks{
+    display: flex;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social{
+    margin: 0 auto;
+}
+
+.social a{
+    margin: 25px;
+    width: 25%;
+}
+
+.social img{
+    width: 2.2em;
+}
+
+.social img:hover{
+    transform: scale(1.5);
+}
+
+/* media query to make the webpage responsive on small divices */
+
+@media screen and (min-width: 50px) and (max-width: 2000px)  {
+    body{
+        margin: 5px;
+        padding: 0px;
+        background-color: rgb(41, 174, 222);
+    }
+
+    header{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    header nav a {
+        font-size: 2.5em;
+        display: block;
+        padding: 15px;
+    }
+    
+    .logo{
+        padding-left: 5px;
+        width: 25%;
+        border-radius: 300px;
+    }
+    
+    .hero_baner{
+        height: 10px;
+        padding: 2px;
+        margin: 0px;
+        display: inline;
+    }
+
+    .hero_baner img{
+        width: 100%;
+        height: 10vh;
+        transform: none;
+    }
+    .hero_baner h1{
+        display: inline;
+        transform: none;
+        font-size: 0.9em;
+        z-index: 2;
+        
+    }
+    
+    .hero_baner p{
+        color: rgb(41, 174, 222);
+        /* z-index: -1; */
+    }
+
+    .contenair1{
+        height: auto;
+        font-size: 1em;
+        display: grid;
+        grid-template: 1fr / 1fr;
+        gap: 5px;
+    
+    }
+
+    main{
+        padding-top: 70px;
+        background-color: #123;
+        z-index: 2;
+        
+    }
+    .contenair2{
+        padding-top: 50px;
+        margin: 50px;
+        /* font-size: 2.1em;
+        margin-left: 200px;
+        display: grid;
+        gap: 20px;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr  1fr;
+        grid-template-areas: 
+            "m"
+            "s"
+            "l"
+            "n"
+            "p"
+            "k"
+        ;
+        */
+    }
+
+    .contenair2 p{
+        padding: 10px;
+        font-family: "Dancing Script", serif;
+    }
+    
+    .contenair2 img{
+        width: 100%;
+        /* height: vh; */
+        border-radius: 50px;
+    }
+    
+    
+
+    footer{
+        height: 15vh;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footlinks, .social img{
+        text-align: center;
+        margin: 30px;
+    }
+    .footlinks{
+        font-size: 1.5em;
+    }
+       
+
+}
+
+/* The End. */
+
