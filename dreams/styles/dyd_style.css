@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Great+Vibes&family=Indie+Flower&family=Kaushan+Script&display=swap');
+
+body{
+    font-family:'Indie Flower', sans-serif;
+    font-size: 15px;
+    background-color:  cyan;
+    margin: 10px;
+}
+
+/* Header  -  navigation bar  - links and logo */
+
+header{
+        width: 100%;
+        height: 15vh;
+        background-color: #123;
+        display: flex;
+        align-items: center;
+              
+    }
+    
+nav a{
+        text-decoration: none;
+        margin-left: 250px;
+    }
+.logo{
+        border: 2px white solid;
+        border-radius: 35px;
+        width: 50px;
+        margin: 15px;
+    }
+.logo:hover{
+        transform: scale(1.2);
+    }
+
+nav a, .footlinks a, .text a, .social a{
+        color:  whitesmoke;
+        text-decoration: none;
+        transition: 1s;
+    }
+    
+nav a:hover, .footlinks a:hover, .text a:hover {
+    
+        letter-spacing: 0.1em;
+        color: #48cae4;
+    }
+
+/* main and all six blocks of images */
+
+main{
+    padding-top: 50px;
+    background-color: #123;
+    width: 100%;
+    height: auto;
+}
+
+main .contenair2 img{
+    width: 90%;
+    border-radius: 0px;
+}
+
+.contenair2_p{
+    text-align: center;
+}
+
+.contenair2{
+    margin: 10px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: 
+        "m s l"
+        "n p k"
+    ;
+    justify-content: center;
+   
+}
+
+.contenair2 h2{
+   
+    color: #48cae4;
+    font-family:'Great Vibes', "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenair2_p{
+    padding-bottom: 25px;
+    font-family: Ezcar;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.line{
+    padding-top: 1px;
+    width: 85%;
+}
+
+.contenair2 p{
+    color: white;
+    padding: 50px;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    text-align: start;
+    /* font-size: 1.2em; */
+    font-style: italic;
+    font-family:'Indie Flower', "Great Vibes", serif;
+}
+
+
+.contenair2 img:hover{
+    width: 85%;
+    
+    border-bottom: 2px #48cae4 solid;
+    border-right: 2px #48cae4 solid ;
+    border-radius: 0px;
+    
+}
+
+.block1{
+    grid-area: m;
+}
+
+.block2{
+    grid-area: s;
+}
+
+
+.block3{
+    grid-area: l;
+}
+
+.block4{
+    grid-area: n;
+}
+
+.block5{
+    grid-area: p;
+}
+
+.block6{
+    grid-area: k;
+}
+
+
+/* Footer - social media links and icons - copyright text */
+
+
+footer{
+    background-color: #123;
+    padding-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.text{
+    margin-left: 10px;
+    color: #48cae4; 
+}
+.footlinks{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footlinks a {
+    margin: 30px;
+}
+
+.social{
+    margin: 0 auto;
+}
+
+.social a{
+    margin: 25px;
+    width: 25%;
+}
+
+.social img{
+    width: 2em;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+
+/* Second page: */
+
+.contenair3{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+}
+
+.contenair3:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+  
+.contenair3{
+    text-align: center;
+    grid-area: f1;
+}
+.ceo{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    border-top: 5px #48cae4 groove;
+}
+.overlay{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #123;
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    opacity: 0.6;
+    transition: .5s;
+}
+
+
+.text2 {
+    white-space: nowrap; 
+    color: goldenrod;
+    font-size: 15px;
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.contenair4 img {
+    width: 60%;
+    height: 20%;
+}
+
+.contenair4 .b3b img {
+    width: 30%;
+}
+
+.contenair4 .ceo{
+    width: 50%;
+    height: 50%;
+}
+
+/* Eczar,  */
+.about_m{
+    font-size: 15px;
+    font-family:'Indie Flower', sans-serif;
+    font-style: italic;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+   
+}
+.contenair4 h3, .h3{
+    font-style: normal;
+    font-size: 35px;
+    font-family: 'Great Vibes', serif;
+}
+
+.about_p{
+    padding: 50px;
+    color: white;
+    align-items: center;
+    grid-area: f;
+}
+
+.contenair4{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    grid-template-areas: 
+        "f  f1"
+        "a1  a"
+        "c  c1"
+        "b  b1"
+    ;
+    align-items: center;
+}
+
+.b1a{
+    grid-area: a;
+    text-align: center;
+    align-self: center;
+}
+
+.b1b{
+    grid-area: a1;
+    text-align: center;
+    align-self: center;
+}
+.contenair4 .b1b img{
+    border: 3px #48cae4 solid;
+    border-radius: 500px;
+}
+
+.b2a{
+    grid-area: b;
+    
+}
+
+.b2b{
+    grid-area: b1;
+}
+
+.b2b img{
+
+    border: 2px #48cae4 solid;
+    border-radius: 15px;
+}
+
+.b3a{
+    grid-area: c;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.b3b{
+    grid-area: c1;
+}
+
+.b3b img{
+    border: 5px #48cae4 groove;
+}
+
+.hero_baner{
+    
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    /* margin-left: 10px;
+    margin-right: 20px; */
+}
+
+.hero_baner img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+   
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    body{
+        margin: 5px;
+        background-color: cyan;
+    }
+    header{
+        width: 100%;
+        height: 15vh;
+        background-color: #123;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* padding: 10px; */
+    }
+    nav a{
+        text-decoration: none;
+        margin: 10px;
+        
+    }
+    .logo{
+        padding: 0px;
+        margin: 0px;
+        width: 4em;
+        border: 2px #48cae4 solid;
+        border-radius: 35px;
+    }
+
+    .hero_baner{
+        padding-bottom: 5px;
+    }
+    .hero_baner img{
+        display: none;
+    }
+
+    main{
+        background-color:#123;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+
+    }
+
+    .contenair2{
+        display: block;
+    }
+
+    footer{
+        background-color: #123;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+
+    }
+  
+    .social img{
+        width: 2em;
+        height: 2em;
+        margin-top: 10px;
+    }
+    .social a{
+        text-decoration: none;
+        margin: 15px;
+    }
+    .footlinks{
+        display: block;
+    }
+    .footlinks a{
+        display: block;
+        text-decoration: none;
+        margin: 10px;
+    }
+
+    /* second page */
+
+    .contenair4{
+        display: block;
+    }
+    .overlay{
+        width: 50%;
+    }
+    
+}
