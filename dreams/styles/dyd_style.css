@@ -1,0 +1,260 @@
+body{
+    background-color:  cyan;
+    margin: 10px;
+}
+
+/* Header  -  navigation bar  - links and logo */
+
+header{
+        width: 100%;
+        height: 15vh;
+        background-color: #123;
+        display: flex;
+        align-items: center;
+              
+    }
+    
+nav a{
+        text-decoration: none;
+        margin-left: 250px;
+    }
+.logo{
+        border: 2px white solid;
+        border-radius: 35px;
+        width: 50px;
+        margin: 15px;
+    }
+.logo:hover{
+        transform: scale(1.2);
+    }
+
+nav a, .footlinks a, .text a, .social a{
+        color:  whitesmoke;
+        text-decoration: none;
+        transition: 1s;
+    }
+    
+nav a:hover, .footlinks a:hover, .text a:hover {
+    
+        letter-spacing: 0.1em;
+        color: #48cae4;
+    }
+
+/* main and all six blocks of images */
+
+main{
+    background-color: #123;
+    width: 100%;
+    height: auto;
+}
+
+main .contenair2 img{
+    width: 90%;
+    border-radius: 0px;
+}
+
+.contenair2_p{
+    text-align: center;
+}
+
+.contenair2{
+    margin: 10px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    grid-template-areas: 
+        "m s l"
+        "n p k"
+    ;
+    justify-content: center;
+   
+}
+
+.contenair2 h2{
+   
+    color: #48cae4;
+    font-family: "Times New Roman", "Dancing Script", serif;
+}
+
+.contenair2_p{
+    padding-top: 25px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.line{
+    padding-top: 1px;
+    width: 85%;
+}
+
+.contenair2 p{
+    color: white;
+    padding: 50px;
+    line-height: 1.5em;
+    text-align: start;
+    font-size: 1.2em;
+    font-family: "Dancing Script", serif;
+}
+
+
+.contenair2 img:hover{
+    width: 85%;
+    
+    border-bottom: 2px #48cae4 solid;
+    border-right: 2px #48cae4 solid ;
+    border-radius: 0px;
+    
+}
+
+.block1{
+    grid-area: m;
+}
+
+.block2{
+    grid-area: s;
+}
+
+
+.block3{
+    grid-area: l;
+}
+
+.block4{
+    grid-area: n;
+}
+
+.block5{
+    grid-area: p;
+}
+
+.block6{
+    grid-area: k;
+}
+
+
+/* Footer - social media links and icons - copyright text */
+
+
+footer{
+    background-color: #123;
+    padding-top: 5px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.text{
+    margin-left: 10px;
+    color: #48cae4; 
+}
+.footlinks{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footlinks a {
+    margin: 30px;
+}
+
+.social{
+    margin: 0 auto;
+}
+
+.social a{
+    margin: 25px;
+    width: 25%;
+}
+
+.social img{
+    width: 2em;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 950px) {
+    body{
+        margin: 5px;
+        background-color: cyan;
+    }
+    header{
+        width: 100%;
+        height: 15vh;
+        background-color: #123;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* padding: 10px; */
+    }
+    nav a{
+        text-decoration: none;
+        margin: 10px;
+        
+    }
+    .logo{
+        padding: 0px;
+        margin: 0px;
+        width: 4em;
+        border: 2px #48cae4 solid;
+        border-radius: 35px;
+    }
+
+    /* .hero_baner{
+        background-color: pink;
+        width: 5px;
+
+    }
+
+    #hero_image{
+        width: 100;
+        height: 90px;
+    } */
+
+    main{
+        background-color: green;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+
+    }
+
+    .contenair2{
+        display: block;
+    }
+
+    footer{
+        background-color: #123;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+
+    }
+  
+    .social img{
+        width: 2em;
+        height: 2em;
+        margin-top: 10px;
+    }
+    .social a{
+        text-decoration: none;
+        margin: 15px;
+    }
+    .footlinks{
+        display: block;
+    }
+    .footlinks a{
+        display: block;
+        text-decoration: none;
+        margin: 10px;
+    }
+    
+}
