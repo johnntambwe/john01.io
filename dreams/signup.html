@@ -24,10 +24,8 @@
 
 
         <main class="signup_m">
-            <div class="contenair2">
-                <p>
-                    <img src="../dreams/images/pullman.jpg" alt="pullman_picture"> <br>
-
+            <div class="contenair_s">
+                <p id="p1">
                     Thank you for your support,
                     Hope you enjoyed our Web site!
                     Do not hesitate to contact us and provide your Feedback.
@@ -41,7 +39,7 @@
                     <input type="text" id="first_name" name="first_name" placeholder="First Name"> <br><br>
 
                     <label for="last_name"></label>
-                    <input type="text" name="last_name" id="last_name" placeholder="Last Name">   
+                    <input type="text" name="last_name" id="last_name" placeholder="Last Name">  <br><br>
 
                     <label for="male"> 
                        M<input type="radio" id="male" name="sex">
@@ -92,19 +90,19 @@
                     <input type="reset" name="reset" id="reset" value="Reset-form">
 
                     <label for="submit"></label>
-                    <input type="button" name="button" id="submit" value="Send Now">
+                    <input type="submit" value="send now" name="submit" id="submit">
                     
                 </form>
 
-                    <h3>Warning!!!</h3>
-                    This website is not yet completed. Do not sumbmit your personal informations, 
+                    <h3 id="pa">Warning!!!</h3>
+                    <p class="p2">This website is not yet completed. Do not sumbmit your personal informations, 
                     you can just try to be comfortable with all materials here. 
                     We will let you know when the site will be done, thank you for your patience.
                     After refreshing the page all information will be automatically 
-                    deleted and submitting button is not going to send nothing. <br> <br>
-                    <strong>DyD's developer team.</strong>
+                    deleted and submitting button is not going to send nothing.</p>  <br> <br>
 
                     <img src="../dreams/images/DyD-logos.jpeg" alt="dyd_logo3_picture">
+                    <strong>DyD's developer team.</strong>
 
             </div>
             
@@ -137,5 +135,26 @@
             </div>
         </footer>
     </div>
+
+<script>
+
+        var user  = prompt("What is your name? ");
+        var msg = document.getElementById("p1");
+        msg.textContent = "Hello " +  user +" thank you for your support, " + "  Hope you enjoyed our Web site! Do not hesitate to contact us and provide your Feedback."
+        msg.style.color = "#48CAE4";
+        var s = document.getElementById("submit")
+        s.addEventListener("click", function(e){
+            document.write("Sorry we didn't send anything because the site is not yet done.\
+            Try again later. <br><br> Sincerly yours, <br> Dyd's development department <br> John Ntambwe CEO.")
+        });
+                   
+                    
+        // var sen = document.getElementsByClassName("");
+        
+        
+
+</script>
+
+
 </body>
 </html>
